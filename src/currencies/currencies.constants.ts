@@ -1,1 +1,1 @@
-export const availableFiatCurrencies = ['USD', 'EUR', 'GBP', 'ILS'];
+export const availableFiatCurrencies = ['USD', 'EUR', 'GBP', 'ILS', 'JPY'];
