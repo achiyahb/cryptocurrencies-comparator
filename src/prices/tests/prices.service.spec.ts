@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { ConfigService } from '@nestjs/config';
 import { HttpService } from '@nestjs/axios';
 import { of } from 'rxjs';
-import mock from './currencies.mock';
+import mock from './prices.mock';
 import { HttpException } from '@nestjs/common';
 import { PricesService } from '../prices.service';
 

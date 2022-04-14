@@ -34,10 +34,46 @@ const expectedResult = [
 
 const notValidCurrency = 'NOT_VALID_CURRENCY';
 
+const moreThan30Currencies = [
+	'BTC',
+	'FRE',
+	'0XBTC',
+	'1ST',
+	'1WO',
+	'AAC',
+	'ABCC',
+	'ABT',
+	'ABYSS',
+	'ACCN',
+	'ACE',
+	'ADA',
+	'ADB',
+	'ADH',
+	'ADI',
+	'ADL',
+	'ADT',
+	'ADX',
+	'AE',
+	'AEN',
+	'AERGO',
+	'AGI',
+	'AGVC',
+	'AID',
+	'AIDOC',
+	'AIT',
+	'AIX',
+	'ALIS',
+	'ALX',
+	'AMB',
+	'AMLT',
+	'AMM',
+];
+
 export default {
 	currenciesNorValidResponse,
 	otherErrorResponse,
 	notValidCurrency,
 	expectedResult,
 	goodProviderResponse,
+	moreThan30Currencies,
 };
