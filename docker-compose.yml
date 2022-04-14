@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  server:
+    container_name: comparator
+    image: comparator
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: npm run start:dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
