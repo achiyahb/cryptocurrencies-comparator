@@ -9,8 +9,9 @@ export class PricesService {
 
 	async getPrices(fiatCurrencies: string[], cryptoCurrencies: string[]) {
 		const url = this.configService.get('cryptoCompare.url');
+		const endpoint = 'pricemulti';
 		const currenciesPriceData = await firstValueFrom(
-			this.httpService.get(`${url}pricemulti`, {
+			this.httpService.get(`${url}${endpoint}`, {
 				headers: {
 					Authorization: this.configService.get('cryptoCompare.apiKey'),
 				},
