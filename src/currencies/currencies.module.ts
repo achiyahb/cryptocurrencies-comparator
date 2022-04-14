@@ -4,8 +4,8 @@ import { CurrenciesController } from './currencies.controller';
 import { HttpModule } from '@nestjs/axios';
 
 @Module({
-  imports: [HttpModule],
-  controllers: [CurrenciesController],
-  providers: [CurrenciesService],
+	imports: [HttpModule],
+	controllers: [CurrenciesController],
+	providers: [CurrenciesService],
 })
 export class CurrenciesModule {}

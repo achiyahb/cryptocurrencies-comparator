@@ -10,16 +10,16 @@ import { CurrenciesModule } from './currencies/currencies.module';
 import { cryptoCompareConfig } from './config/crypto-compare.config';
 
 @Module({
-  imports: [
-    ConfigModule.forRoot({
-      isGlobal: true,
-      validationSchema: Joi.object(envSchema),
-      load: [appConfig, cryptoCompareConfig],
-    }),
-    PricesModule,
-    CurrenciesModule,
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+	imports: [
+		ConfigModule.forRoot({
+			isGlobal: true,
+			validationSchema: Joi.object(envSchema),
+			load: [appConfig, cryptoCompareConfig],
+		}),
+		PricesModule,
+		CurrenciesModule,
+	],
+	controllers: [AppController],
+	providers: [AppService],
 })
 export class AppModule {}
