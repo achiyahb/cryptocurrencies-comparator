@@ -9,4 +9,9 @@ export class CurrenciesController {
   async getAvailableCryptoCurrencies() {
     return await this.currenciesService.getAvailableCryptoCurrencies();
   }
+
+  @Get('fiat')
+  async getAvailableFiatCurrencies() {
+    return await this.currenciesService.getAvailableFiatCurrencies();
+  }
 }

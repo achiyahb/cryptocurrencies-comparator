@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import { ConfigService } from '@nestjs/config';
+import { availableFiatCurrencies } from './currencies.constants';
 
 @Injectable()
 export class CurrenciesService {
@@ -14,5 +15,9 @@ export class CurrenciesService {
       },
     });
     return Object.keys(availableCoinsData.data.Data);
+  }
+
+  async getAvailableFiatCurrencies() {
+    return availableFiatCurrencies;
   }
 }
