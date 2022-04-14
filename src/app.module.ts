@@ -16,6 +16,8 @@ import { cryptoCompareConfig } from './config/crypto-compare.config';
       validationSchema: Joi.object(envSchema),
       load: [appConfig, cryptoCompareConfig],
     }),
+    PricesModule,
+    CurrenciesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
