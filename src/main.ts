@@ -8,7 +8,6 @@ async function bootstrap() {
   app.use(helmet());
   app.enableCors();
   const configService = app.get<ConfigService>(ConfigService);
-  console.log(configService.get('app.port'));
   await app.listen(configService.get('app.port'));
 }
 bootstrap();
